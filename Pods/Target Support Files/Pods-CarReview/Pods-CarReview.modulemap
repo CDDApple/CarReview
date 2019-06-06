@@ -1,0 +1,6 @@
+framework module Pods_CarReview {
+  umbrella header "Pods-CarReview-umbrella.h"
+
+  export *
+  module * { export * }
+}
