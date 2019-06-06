@@ -1,37 +1,56 @@
 # CarReview
 
-#### 项目介绍
-汽车测评
+#### 项目背景
+1.业余时间,喜欢看大咖的汽车测评,苦于没有一个集中的平台
+
+2.大咖视频集中在优酷大鱼号模块
+
+3.很早之前,有一款app集成了热门车评人的视频,但下架且UI交互不是很好,所以决心自己设计并开发此app
+
+4.开发之后,发现不只局限于优酷大鱼号汽车测评人分类,只要优酷有的分类即可,按规则添加,实时查看最新视频
 
 #### 软件架构
-软件架构说明
+##### 1.基础结构
+
+MVVM+RxSwift
+
+##### 2.第三方库
+
+- SnapKit
+- Then
+- Moya/RxSwift
+- RxSwift
+- RxCocoa
+- HandyJSON
+- Kingfisher
+- Reusable
+- MJRefresh
+- lottie-ios
+- LTScrollView
+- DNSPageView
+- FSPagerView
+- TFHpple
+- JXSegmentedView
+
+#### 效果演示
 
 
-#### 安装教程
 
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 使用说明
-
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 参与贡献
-
-1. Fork 本项目
-2. 新建 Feat_xxx 分支
-3. 提交代码
-4. 新建 Pull Request
+首页
 
 
-#### 码云特技
 
-1. 使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2. 码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3. 你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5. 码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+详情
+
+
+
+频道管理(删除&排序)
+
+
+
+频道添加
+
+
+
+#### 如何获取频道代码?
+

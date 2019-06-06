@@ -22,10 +22,10 @@ class CDLoadingView: UIView {
         return av
     }()
     
-    private lazy var animationView : LOTAnimationView = {
-        let av = LOTAnimationView(name: "simple_loader")
+    private lazy var animationView : AnimationView = {
+        let av = AnimationView(name: "simple_loader")
         av.contentMode = .scaleAspectFill
-        av.loopAnimation = true
+//        av.loopAnimation = true
 
         return av
     }()

@@ -3,7 +3,7 @@
 //  DNSPageView
 //
 //  Created by Daniels on 2018/2/24.
-//  Copyright © 2018年 Daniels. All rights reserved.
+//  Copyright © 2018 Daniels. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -35,15 +35,15 @@ open class DNSPageViewManager: NSObject {
     private (set) public var style: DNSPageStyle
     private (set) public var titles: [String]
     private (set) public var childViewControllers: [UIViewController]
-    
-    private (set) public lazy var titleView = DNSPageTitleView(frame: .zero, style: style, titles: titles)
-    private (set) public lazy var contentView = DNSPageContentView(frame: .zero, style: style, childViewControllers: childViewControllers)
+    private (set) public var startIndex: Int
+    private (set) public lazy var titleView = DNSPageTitleView(frame: .zero, style: style, titles: titles, currentIndex: startIndex)
+    private (set) public lazy var contentView = DNSPageContentView(frame: .zero, style: style, childViewControllers: childViewControllers, currentIndex: startIndex)
 
-    public init(style: DNSPageStyle, titles: [String], childViewControllers: [UIViewController]) {
-        
+    public init(style: DNSPageStyle, titles: [String], childViewControllers: [UIViewController], startIndex: Int = 0) {
         self.style = style
         self.titles = titles
         self.childViewControllers = childViewControllers
+        self.startIndex = startIndex
         super.init()
         
         setupUI()
@@ -58,10 +58,6 @@ open class DNSPageViewManager: NSObject {
 
 extension DNSPageViewManager {
     private func setupUI() {
-
-        titleView.backgroundColor = UIColor.clear
-        
-        contentView.backgroundColor = UIColor.white
         
         titleView.delegate = contentView
         contentView.delegate = titleView

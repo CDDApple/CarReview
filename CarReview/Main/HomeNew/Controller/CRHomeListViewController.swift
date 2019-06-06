@@ -45,8 +45,6 @@ class CRHomeListViewController: CDBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
-        
         loadData(true)
     }
     
@@ -99,8 +97,7 @@ class CRHomeListViewController: CDBaseViewController {
             }
             
             let xpathParser = TFHpple(htmlData: data as Data?)
-            
-            let dataArr = xpathParser?.search(withXPathQuery: "//div")
+            let dataArr = xpathParser?.search(withXPathQuery: "//a")
             
             for element in dataArr! {
                 
